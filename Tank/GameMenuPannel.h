@@ -16,9 +16,9 @@ public:
 	//存放一个CGame类的指针在本文中
 	void SetParent(CGame *g)
 	{
-		m_pParam = g;
+		m_pParent = g;
 	}
-	CGame *m_pParam{ nullptr };//存放一个CGame类的指针在本文中
+	CGame *m_pParent{ nullptr };//存放一个CGame类的指针在本文中
 	virtual void Draw(Graphics &gh) const;//画自己
 	RectF m_rect{ 0,0,800,600 }; //画自己的范围
 	void OnMouseMove(UINT nFlags, CPoint point);// 处理鼠标的移动事件

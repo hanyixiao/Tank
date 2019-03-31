@@ -99,6 +99,14 @@ public:
 		rc.Y -= static_cast<Gdiplus::REAL>((m_fSpeed)*cos(GetDirectionArc()));
 		return rc;
 	}
+	virtual RectF BackwardNextRect()const
+	{
+		RectF rc = m_rect;
+		rc.X -= static_cast<Gdiplus::REAL>((m_fSpeed)*sin(GetDirectionArc()));
+		rc.Y += static_cast<Gdiplus::REAL>((m_fSpeed)*cos(GetDirectionArc()));
+		return rc;
+
+	}
 	//获取头部位置：图片为矩形：头部位置是角度是0时
 	//距离中心点为半径（对角线/2），重置自己在X轴上的位置
 	virtual PointF GetHeadPos()const

@@ -45,9 +45,6 @@
     <ClInclude Include="GameMenuPannel.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="CGameBackground.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="Player.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -72,6 +69,21 @@
     <ClInclude Include="KeyMenuPlayer02.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="GameMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Wall.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePathFinder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMenuPanel2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMenuBackground.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Tank.cpp">
@@ -93,9 +105,6 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="GameMenuPannel.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="CGameBackground.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Player.cpp">
@@ -122,6 +131,18 @@
     <ClCompile Include="KeyMenuPlayer02.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="GameMap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Wall.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMenuPanel2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMenuBackground.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Tank.rc">
@@ -141,6 +162,90 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="0.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="1.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="2.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="3.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="4.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="5.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="6.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="7.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="8.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="9.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="10.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="11.gif">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="menu_1player_0.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="menu_1player_1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="menu_2player_0.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="menu_2player_1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="menu_background.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="menu_backup.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="menu_key_player01_0.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="menu_key_player01_1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="menu_key_player02_0.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="menu_key_player02_1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="tank.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="tank_bot.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="tank_player1.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="tank_player2.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="tank_player3.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="Toolbar.bmp">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

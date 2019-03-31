@@ -5,7 +5,7 @@
 GameMenuPannel::GameMenuPannel()
 {
 	// 背景图
-	m_imgBackground = Image::FromFile(_T("menu_backgroud.png"));
+	m_imgBackground = Image::FromFile(_T("menu_background.png"));
 	//菜单选项一：人机大战
 	m_menuItems[0].index = 0;
 	for (int i = 0; i < 2; ++i) {
@@ -37,7 +37,7 @@ GameMenuPannel::~GameMenuPannel()
 //绘制自己
 void GameMenuPannel::Draw(Graphics &gh)const
 {
-	//gh.DrawImage(m_imgBackground, m_rect);
+	gh.DrawImage(m_imgBackground, m_rect);
 	//画子菜单
 	for (auto menuItem : m_menuItems) {
 		auto img = get<0>(menuItem.vImgInfoPtr[menuItem.index]);//获取菜单选项的图片
@@ -74,6 +74,7 @@ void GameMenuPannel::OnLButtonUp(UINT flags, CPoint point)
 		auto rect = get<1>(menuItem.vImgInfoPtr[menuItem.index]);
 		if (rect.Contains(pt)) {
 			//人机大战：暂时不做处理
+			m_pParent->SetStep(CGame::EGameTypeOne2BotMenu);
 			return;
 		}
 	}
@@ -83,6 +84,7 @@ void GameMenuPannel::OnLButtonUp(UINT flags, CPoint point)
 		auto rect = get<1>(menuItem.vImgInfoPtr[menuItem.index]);
 		if (rect.Contains(pt)) {
 			//双人大战，暂时不做处理
+			m_pParent->SetStep(CGame::EGameTypeOne2OneMenu);
 			return;
 		}
 	}
